@@ -13,10 +13,12 @@ const AddNewProduct = () => {
   };
   return (
     <div>
+      <h2>Form By MapStateToProps :</h2>
       <form action="#" onSubmit={submitHandler}>
         <input type="text" placeholder="product" ref={product} />
         <input type="text" placeholder="price" ref={price} />
-        <button>Add New Project</button>
+        <button>Add New Product</button>
+        <button>Remove</button>
       </form>
     </div>
   );
