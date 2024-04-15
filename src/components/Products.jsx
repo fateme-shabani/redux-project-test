@@ -4,11 +4,12 @@ import { connect } from "react-redux";
 const Products = (props) => {
   return (
     <div>
-      {props.products.map((item) => {
+      {props.prd.map((item) => {
         return (
           <div>
-            <h2>{item.name}----{item.price}</h2>
-          
+            <h2>
+              {item.name} ---- {item.price}
+            </h2>
           </div>
         );
       })}
@@ -18,7 +19,7 @@ const Products = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    products: state,
+    prd: state,
   };
 };
 
