@@ -10,8 +10,10 @@ const ProductByHook = () => {
           <h3>
             {item.name} --- {item.price}
           </h3>
+          
         );
       })}
+      <button>Remove</button>
     </div>
   );
 };

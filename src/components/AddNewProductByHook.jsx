@@ -19,7 +19,7 @@ const AddNewProductByHook = () => {
         <input type="text" placeholder="name" ref={product} />
         <input type="text" placeholder="price" ref={price} />
         <button>Add</button>
-        <button>Remove</button>
+        
       </form>
     </div>
   );

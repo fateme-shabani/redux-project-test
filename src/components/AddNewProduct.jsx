@@ -18,7 +18,7 @@ const AddNewProduct = () => {
         <input type="text" placeholder="product" ref={product} />
         <input type="text" placeholder="price" ref={price} />
         <button>Add New Product</button>
-        <button>Remove</button>
+        
       </form>
     </div>
   );

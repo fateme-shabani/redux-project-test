@@ -13,6 +13,7 @@ const Products = (props) => {
           </div>
         );
       })}
+      <button>Remove</button>
     </div>
   );
 };
