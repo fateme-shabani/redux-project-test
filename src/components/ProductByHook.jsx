@@ -10,10 +10,15 @@ const ProductByHook = () => {
           <h3>
             {item.name} --- {item.price}
           </h3>
+<<<<<<< HEAD
           
         );
       })}
       <button>Remove</button>
+=======
+        );
+      })}
+>>>>>>> 2298c212c3da7096d20c728765a811191ef5a260
     </div>
   );
 };
