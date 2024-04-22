@@ -4,6 +4,7 @@ import Products from "./components/Products";
 import AddNewProduct from "./components/AddNewProduct";
 import ProductByHook from "./components/ProductByHook";
 import AddNewProductByHook from "./components/AddNewProductByHook";
+import ShopingCart from "./components/ShopingCart";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Products />
       <AddNewProductByHook />
       <ProductByHook />
+      ----------------------------shopping cart------------------------------------
+      <ShopingCart />
     </>
   );
 }

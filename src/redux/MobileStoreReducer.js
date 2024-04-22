@@ -9,11 +9,11 @@ const MobileStoreReducer = (state = initialState, action) => {
     case "BUY-PHONE":
       return [
         ...state,
-        { id: action.id, name: action.name, price: action.price },
+        { id: new Date(), name: action.name, price: action.price },
       ];
-    case "REMOVE-PHON":
-      return initialState.filter((item) => {
-        item.id != id;
+    case "REMOVE-PHONE":
+      return state.filter((item) => {
+        return item.id !== action.id;
       });
     default:
       return state;

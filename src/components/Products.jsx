@@ -20,7 +20,7 @@ const Products = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    prd: state,
+    prd: state.product,
   };
 };
 

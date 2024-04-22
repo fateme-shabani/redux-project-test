@@ -10,20 +10,15 @@ const AddNewProductByHook = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(buyPhone(product.current.value, price.current.value));
-    dispatch(RemovePhone)
+    dispatch(RemovePhone(product.current.value, price.current.value));
   };
   return (
     <div>
-        <h2>Form By Hook :</h2>
+      <h2>Form By Hook :</h2>
       <form action="" onSubmit={submitHandler}>
         <input type="text" placeholder="name" ref={product} />
         <input type="text" placeholder="price" ref={price} />
         <button>Add</button>
-<<<<<<< HEAD
-        
-=======
-        <button>Remove</button>
->>>>>>> 2298c212c3da7096d20c728765a811191ef5a260
       </form>
     </div>
   );
